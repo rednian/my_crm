@@ -1,5 +1,7 @@
 on:
   push:
+    paths-ignore:
+      - "web/**"
     branches:
       - master
 name: 🚀 Deploy application to server
