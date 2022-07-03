@@ -1,5 +1,7 @@
 on:
   push:
+    paths:
+      - "api/**"
     branches:
       - master
 name: 🚀 Deploy application to server
