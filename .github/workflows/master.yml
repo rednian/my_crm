@@ -1,6 +1,6 @@
 on:
   push:
-    paths-ignore:
+    paths:
       - "web/**"
     branches:
       - master
@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: api/
+        working-directory: api
+
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
