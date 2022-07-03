@@ -5,11 +5,11 @@ on:
 name: 🚀 Deploy application to server
 jobs:
   web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: api
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
 
     steps:
     - name: 🚚 Get latest code
